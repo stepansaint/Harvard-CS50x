@@ -1,3 +1,8 @@
+/**
+ * A program that applies filters to BMPs
+ * @author Ermakov Stepan
+*/
+
 #include <getopt.h>
 #include <stdio.h>
 #include <stdlib.h>
