@@ -1,11 +1,17 @@
+/**
+ * Implemented with CS50 library
+ * @author Ermakov Stepan
+*/
+
 #include <stdio.h>
-#include <cs50.h>
+#include "cs50.h"
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
 
 int proper_input(string key);
 
+// A program that encrypts messages using a substitution cipher
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -49,8 +55,9 @@ int main(int argc, string argv[])
             }
         }
     }
-
     printf("\n");
+
+    return 0;
 }
 
 int proper_input(string key)
@@ -70,7 +77,6 @@ int proper_input(string key)
             printf("Key must contain 26 characters.\n");
             return 1;
         }
-
     }
 
     for (int i = 0; i < length_of_key; i++)

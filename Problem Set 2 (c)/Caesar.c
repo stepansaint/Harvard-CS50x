@@ -1,14 +1,20 @@
+/**
+ * Implemented with CS50 library
+ * @author Ermakov Stepan
+*/
+
 #include <stdio.h>
-#include <cs50.h>
+#include "cs50.h"
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
-int isAllDigits(string secondArgument);
+int is_all_digits(string secondArgument);
 
+// A program that encrypts a message using Caesar’s cipher
 int main(int argc, string argv[])
 {
-    if (argc != 2 || isAllDigits(argv[1]))
+    if (argc != 2 || is_all_digits(argv[1]))
     {
         printf("Usage: ./caesar key\n");
         return 1;
@@ -39,11 +45,12 @@ int main(int argc, string argv[])
             }
         }
     }
-
     printf("\n");
+    
+    return 0;
 }
 
-int isAllDigits(string secondArgument)
+int is_all_digits(string secondArgument)
 {
     for (int i = 0; i < strlen(secondArgument); i++)
     {
