@@ -1,5 +1,5 @@
 # Computer Science 50x (Oct 2022 - )
-## Content
+## Syllabus
 #### Week 0 - Scratch
 Some topics: problem solving, ASCII, Unicode, pseudocode.
 
@@ -33,3 +33,4 @@ Some topics:
 #### Week 10 - Emoji
 Some topics:
 
+### Link: https://cs50.harvard.edu/x/2022/
