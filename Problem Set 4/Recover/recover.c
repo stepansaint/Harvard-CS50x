@@ -1,3 +1,8 @@
+/**
+ * A program that recovers JPEGs from a forensic image
+ * @author Ermakov Stepan
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "helpers.h"
