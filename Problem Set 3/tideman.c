@@ -1,3 +1,8 @@
+/**
+ * Implemented with CS50 library
+ * @author Ermakov Stepan
+*/
+
 #include "cs50.h"
 #include <stdio.h>
 #include <string.h>
@@ -35,6 +40,19 @@ bool has_cycle(int winner, int loser);
 void lock_pairs(void);
 void print_winner(void);
 
+// A program that runs a Tideman election
+/*
+The Tideman voting method (also known as “ranked pairs”) 
+is a ranked-choice voting method that’s guaranteed to produce 
+the Condorcet (the person who would have won any head-to-head 
+matchup against another candidate) winner of the election 
+if one exists.
+
+Generally speaking, the Tideman method works by constructing
+a “graph” of candidates, where an arrow (i.e. edge) 
+from candidate A to candidate B indicates that candidate 
+A wins against candidate B in a head-to-head matchup. 
+*/
 int main(int argc, string argv[])
 {
     // Check for invalid usage

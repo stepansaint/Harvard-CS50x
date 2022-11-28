@@ -1,3 +1,8 @@
+/**
+ * Implemented with CS50 library
+ * @author Ermakov Stepan
+*/
+
 #include "cs50.h"
 #include <stdio.h>
 #include <string.h>
@@ -23,6 +28,16 @@ int candidate_count;
 bool vote(string name);
 void print_winner(void);
 
+// A program that runs a plurality election
+/*
+Perhaps the simplest way to hold an election, though, 
+is via a method commonly known as the “plurality vote” 
+(also known as “first-past-the-post” or “winner take all”). 
+In the plurality vote, every voter gets to vote for one candidate. 
+At the end of the election, whichever candidate 
+has the greatest number of votes is declared the winner 
+of the election
+*/
 int main(int argc, string argv[])
 {
     // Check for invalid usage

@@ -1,3 +1,8 @@
+/**
+ * Implemented with CS50 library
+ * @author Ermakov Stepan
+*/
+
 #include "cs50.h"
 #include <stdio.h>
 #include <string.h>
@@ -33,6 +38,20 @@ int find_min(void);
 bool is_tie(int min);
 void eliminate(int min);
 
+// A program that runs a runoff election
+/*
+Let’s consider the nine ballots above and examine how 
+a runoff election would take place.
+
+Alice has two votes, Bob has three votes, and Charlie has four votes. 
+To win an election with nine people, a majority (five votes)
+is required. Since nobody has a majority, a runoff needs to be held. 
+Alice has the fewest number of votes (with only two), so Alice 
+is eliminated. The voters who originally voted for Alice 
+listed Bob as second preference, so Bob gets the extra two vote. 
+Bob now has five votes, and Charlie still has four votes.
+Bob now has a majority, and Bob is declared the winner.
+*/
 int main(int argc, string argv[])
 {
     // Check for invalid usage

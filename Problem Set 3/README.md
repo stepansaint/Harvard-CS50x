@@ -1,5 +1,5 @@
 ## Usage:
-Download Problem Set 2, open up your terminal, _cd_ into Problem Set 2.
+Download Problem Set 3, open up your terminal, _cd_ into Problem Set 3.
 
 ### plurality.c
 To compile: **_clang -o plurality plurality.c cs50.c_**
