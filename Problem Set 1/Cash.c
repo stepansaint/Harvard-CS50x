@@ -98,5 +98,3 @@ int get_int(char *question)
     scanf("%i", &n);
     return n;
 }
-
-
