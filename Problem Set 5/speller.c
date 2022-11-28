@@ -1,4 +1,7 @@
-// Implements a spell-checker
+/**
+ * A program that spell-checks a file using a hash table
+ * @author Ermakov Stepan
+*/
 
 #include <ctype.h>
 #include <stdio.h>

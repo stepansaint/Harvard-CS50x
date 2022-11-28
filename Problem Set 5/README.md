@@ -8,4 +8,4 @@ To run: **_./speller dictionaries/large texts/(name of text).txt_**
 
 (e.g., *_./speller dictionaries/large texts/homer.txt_*) 
 
-_This is a whole task from Week 4. It's passed CS50 tests._
+_This is a whole task from Week 5. It's passed CS50 tests._
