@@ -184,6 +184,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
+// Calculate average of color for new pixel using Sobel operator
 int calculate_average(int all_g_x, int all_g_y)
 {
     double temp_g_x = all_g_x * all_g_x;

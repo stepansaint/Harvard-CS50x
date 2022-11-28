@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    // Open a forensic file
     FILE *in_ptr = fopen(argv[1], "r");
     if (in_ptr == NULL)
     {
@@ -22,19 +23,20 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    BYTE buffer[BLOCK_SIZE]; // Can we use not a byte?
-    int counter_jpg = -1; // Because we start counting from 0
+    BYTE buffer[BLOCK_SIZE]; 
+    int counter_jpg = -1; // Start counting from 0
     char *name_jpg = malloc(sizeof(char) * 8);
 
     while (fread(buffer, 1, BLOCK_SIZE, in_ptr) == BLOCK_SIZE)
     {
+        // Write to a new file
         if (buffer[0] == 0xff && buffer[1] == 0xd8 &&
             buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
             counter_jpg++;
             create_new_jpg(name_jpg, in_ptr, buffer, counter_jpg);
         }
-        else if (counter_jpg >= 0) // To write to an existing file
+        else if (counter_jpg >= 0) // Write to an existing file
         {
             continue_writing_jpg(name_jpg, in_ptr, buffer);
         }
