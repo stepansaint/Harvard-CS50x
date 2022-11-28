@@ -1,5 +1,5 @@
 # Computer Science 50x (Oct 2022 - )
-## Content
+## Syllabus
 #### Week 0 - Scratch
 Some topics: problem solving, ASCII, Unicode, pseudocode.
 
