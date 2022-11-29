@@ -1,86 +1,48 @@
 /**
- * Implemented without CS50 library
+ * A program that prompts the user for the number of cents
+ * that a customer is owed and then prints the smallest number
+ * of coins with which that change can be made
  * @author Ermakov Stepan
 */
 
+#include "cs50.h"
 #include <stdio.h>
 
-int calculate_dimes(int change);
-int calculate_nickels(int change);
-int calculate_pennies(int change);
-int calculate_quarters(int change);
-int get_cents();
-int get_int(char *strig);
+int get_cents(void);
+int calculate_quarters(int cents);
+int calculate_dimes(int cents);
+int calculate_nickels(int cents);
+int calculate_pennies(int cents);
 
-// A program that prompts the user for the number of cents 
-// that a customer is owed and then prints the smallest number 
-// of coins with which that change can be made
 int main(void)
 {
-    int change = get_cents();
+    // Ask how many cents the customer is owed
+    int cents = get_cents();
 
-    int numberOfQuarters = calculate_quarters(change);
-    change -= numberOfQuarters * 25;
-    int numberOfDimes = calculate_dimes(change);
-    change -= numberOfDimes * 10;
-    int numberOfNickels = calculate_nickels(change);
-    change -= numberOfNickels * 5;
-    int numberOfPennies = calculate_pennies(change);
+    // Calculate the number of quarters to give the customer
+    int quarters = calculate_quarters(cents);
+    cents = cents - quarters * 25;
 
-    int numberOfCoins = numberOfQuarters + numberOfDimes +
-                        numberOfNickels + numberOfPennies;
-    printf("%i\n", numberOfCoins);
+    // Calculate the number of dimes to give the customer
+    int dimes = calculate_dimes(cents);
+    cents = cents - dimes * 10;
+
+    // Calculate the number of nickels to give the customer
+    int nickels = calculate_nickels(cents);
+    cents = cents - nickels * 5;
+
+    // Calculate the number of pennies to give the customer
+    int pennies = calculate_pennies(cents);
+    cents = cents - pennies * 1;
+
+    // Sum coins
+    int coins = quarters + dimes + nickels + pennies;
+
+    // Print total number of coins to give the customer
+    printf("%i\n", coins);
 }
 
-int calculate_dimes(int change)
-{
-    int numberOfCoins = 0;
-    int dime = 10;
-    while (change >= dime)
-    {
-        numberOfCoins++;
-        change -= dime;
-    }
-    return numberOfCoins;
-}
-
-int calculate_nickels(int change)
-{
-    int numberOfCoins = 0;
-    int nickel = 5;
-    while (change >= nickel)
-    {
-        numberOfCoins++;
-        change -= nickel;
-    }
-    return numberOfCoins;
-}
-
-int calculate_pennies(int change)
-{
-    int numberOfCoins = 0;
-    int penny = 1;
-    while (change >= penny)
-    {
-        numberOfCoins++;
-        change -= penny;
-    }
-    return numberOfCoins;
-}
-
-int calculate_quarters(int change)
-{
-    int numberOfCoins = 0;
-    int quarter = 25;
-    while (change >= quarter)
-    {
-        numberOfCoins++;
-        change -= quarter;
-    }
-    return numberOfCoins;
-}
-
-int get_cents()
+int get_cents(void)
 {
     int change;
     do
@@ -91,10 +53,50 @@ int get_cents()
     return change;
 }
 
-int get_int(char *question)
+int calculate_quarters(int cents)
 {
-    int n;
-    printf("%s", question);
-    scanf("%i", &n);
-    return n;
+    int number_coins = 0;
+    int quarter = 25;
+    while (cents >= quarter)
+    {
+        number_coins++;
+        cents -= quarter;
+    }
+    return number_coins;
+}
+
+int calculate_dimes(int cents)
+{
+    int number_coins = 0;
+    int dime = 10;
+    while (cents >= dime)
+    {
+        number_coins++;
+        cents -= dime;
+    }
+    return number_coins;
+}
+
+int calculate_nickels(int cents)
+{
+    int number_coins = 0;
+    int nickel = 5;
+    while (cents >= nickel)
+    {
+        number_coins++;
+        cents -= nickel;
+    }
+    return number_coins;
+}
+
+int calculate_pennies(int cents)
+{
+    int number_coins = 0;
+    int penny = 1;
+    while (cents >= penny)
+    {
+        number_coins++;
+        cents -= penny;
+    }
+    return number_coins;
 }

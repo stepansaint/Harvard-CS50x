@@ -1,9 +1,14 @@
 ## Usage:
-Download Problem Set 1, open up your terminal, _cd_ into Problem Set 1.
+Download Problem Set 1 and open up this folder.
 
-### cash.c
-To compile: **_make cash_** (or **clang -o cash cash.c**)
+### cash.c _or_ credit.c _or_ hello.c _or_ mario-less.c _or_ mario.c
 
-To run: **_./cash_**
+To compile: **_clang -o (name) (name).c cs50.c_**
 
-_There’s just one task out of many others that I completed in Week 1._ _All of them passed CS50 tests._
+E.g., _clang -o cash cash.c cs50.c_
+
+To run: **_./(name)_**
+
+E.g., _./cash_
+
+_These are all tasks from Week 1. All of them passed CS50 tests (including tests for code style)._
