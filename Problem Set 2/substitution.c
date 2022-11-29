@@ -1,5 +1,5 @@
 /**
- * Implemented with CS50 library
+ * A program that encrypts messages using a substitution cipher
  * @author Ermakov Stepan
 */
 
@@ -9,9 +9,9 @@
 #include <string.h>
 #include <stdlib.h>
 
+// Check correctness of input (exactly 26 letters)
 int proper_input(string key);
 
-// A program that encrypts messages using a substitution cipher
 int main(int argc, string argv[])
 {
     if (argc != 2)

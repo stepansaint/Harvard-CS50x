@@ -1,5 +1,5 @@
 /**
- * Implemented with CS50 library
+ * A program that encrypts a message using Caesar’s cipher
  * @author Ermakov Stepan
 */
 
@@ -9,9 +9,9 @@
 #include <string.h>
 #include <ctype.h>
 
+// Check correctness of input
 int is_all_digits(string secondArgument);
 
-// A program that encrypts a message using Caesar’s cipher
 int main(int argc, string argv[])
 {
     if (argc != 2 || is_all_digits(argv[1]))
@@ -46,7 +46,7 @@ int main(int argc, string argv[])
         }
     }
     printf("\n");
-    
+
     return 0;
 }
 
