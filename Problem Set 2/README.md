@@ -1,14 +1,16 @@
-## Usage:
-Download Problem Set 2, open up your terminal, _cd_ into Problem Set 2.
+# Usage:
+Download Problem Set 2 and open up this folder.
 
-### caesar.c
-To compile: **_clang -o caesar caesar.c cs50.c_**
+### [caesar.c](caesar.c) _or_ [redability.c](readability.c)  _or_ [substitution.c](substitution.c) 
 
-To run: **_./caesar_** **(several numbers representing the key)**
+To *compile* one of the files: `clang -o (name) (name).c cs50.c` E.g., ***clang -o caesar caesar.c cs50.c***
 
-### substitution.c
-To compile: **_clang -o substitution substitution.c cs50.c_**
+To *run* one of the files: `./(name)` E.g., ***./caesar***
 
-To run: **_./substitution_** **(26 letters representing the key)**
+### _From Lab 2_ [scrabble.c](Lab_2/scrabble.c) 
 
-_There’re just few tasks out of many others that I completed in Week 2._ _All of them passed CS50 tests._
+To *compile*: `clang -o scrabble.c scrabble.c cs50.c`
+
+To *run*: `./scrabble`
+
+_These are all tasks from Week 2. All of them passed CS50 tests (including tests for code style)._
