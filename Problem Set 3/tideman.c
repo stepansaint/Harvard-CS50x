@@ -1,5 +1,5 @@
 /**
- * Implemented with CS50 library
+ * A program that runs a Tideman election
  * @author Ermakov Stepan
 */
 
@@ -40,7 +40,6 @@ bool has_cycle(int winner, int loser);
 void lock_pairs(void);
 void print_winner(void);
 
-// A program that runs a Tideman election
 /*
 The Tideman voting method (also known as “ranked pairs”) 
 is a ranked-choice voting method that’s guaranteed to produce 

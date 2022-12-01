@@ -1,5 +1,5 @@
 /**
- * Implemented with CS50 library
+ * A program that runs a plurality election
  * @author Ermakov Stepan
 */
 
@@ -28,7 +28,6 @@ int candidate_count;
 bool vote(string name);
 void print_winner(void);
 
-// A program that runs a plurality election
 /*
 Perhaps the simplest way to hold an election, though, 
 is via a method commonly known as the “plurality vote” 

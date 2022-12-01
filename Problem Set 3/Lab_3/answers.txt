@@ -1,0 +1,35 @@
+/**
+ * Analysis of three sorting programs to determine which algorithms they use
+ * @author Ermakov Stepan
+*/
+
+// Explanations begin in this order: sort3 -> sort2 -> sort1
+
+sort1 uses:
+Bubble Sort
+
+How do you know?:
+Bubble Sort has big O (of n squared) and big Omega (of n).
+In comparison with two other programs sort1 (Bubble Sort)
+works very efficiently with 50.000 sorted elements
+(like sort2 - Merge Sort) and as long (as sort3 - Selection Sort)
+with a shuffled list of elements.
+
+sort2 uses:
+Merge Sort
+
+How do you know?:
+When I was done with sort3 - Selection Sort, I switched to
+50.000 mixed elements. I thought about Bubble Sort's big O
+(of n squared) and Merge Sort's big O (of n*log(n)). I ran two
+remaining programs. It turned out that sort2 (Merge Sort)
+used 40(!) times less resources than sort1 (Bubble Sort) did.
+
+sort3 uses:
+Selection Sort
+
+How do you know?:
+This is because Selection Sort's Theta is of n squared.
+So I decided to check the running time of each program using already
+sorted 50.000 elements. It turned out that sort3 (Selection Sort)
+used a lot more time (about 7 times more) than two others.

@@ -1,5 +1,5 @@
 /**
- * Implemented with CS50 library
+ * A program that runs a runoff election
  * @author Ermakov Stepan
 */
 
@@ -38,7 +38,6 @@ int find_min(void);
 bool is_tie(int min);
 void eliminate(int min);
 
-// A program that runs a runoff election
 /*
 Let’s consider the nine ballots above and examine how 
 a runoff election would take place.
