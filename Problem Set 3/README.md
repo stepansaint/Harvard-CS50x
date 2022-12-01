@@ -1,19 +1,16 @@
-## Usage:
-Download Problem Set 3, open up your terminal, _cd_ into Problem Set 3.
+# Usage:
+Download Problem Set 3 and open up this folder.
 
-### plurality.c
-To compile: **_clang -o plurality plurality.c cs50.c_**
+### [plurality.c](plurality.c) _or_ [runoff.c](runoff.c) _or_ [tideman.c](tideman.c) 
 
-To run: **_./plurality_** **(several candidates)**
+To *compile* one of the files: `clang -o (name) (name).c cs50.c` E.g., ***clang -o tideman tideman.c cs50.c***
 
-### runoff.c
-To compile: **_clang -o runoff runoff.c cs50.c_**
+To *run* one of the files: `./(name)` E.g., ***./tideman***
 
-To run: **_./runoff_** **(several candidates)**
+### _From Lab\_3_ [answers.txt](Lab_3/answers.txt) 
 
-### tideman.c
-To compile: **_clang -o tideman tideman.c cs50.c_**
+Open up folder Lab_3.
 
-To run: **_./tideman_** **(several candidates)**
+*To try it:* `time ./sort(№ of program) (text_file).txt` E.g., ***time ./sort2 sorted50000.txt***
 
-_These are all tasks from Week 3._ _All of them passed CS50 tests._
+_These are all tasks from Week 3. All of them passed CS50 tests (including tests for code style)._
