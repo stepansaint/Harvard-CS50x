@@ -7,9 +7,9 @@ To *compile* one of the files: `clang -o (name) (name).c cs50.c` E.g., ***clang 
 
 To *run* one of the files: `./(name)` E.g., ***./caesar***
 
-### _From\_Lab 2_ [scrabble.c](Lab_2/scrabble.c) 
+### _From Lab\_2_ [scrabble.c](Lab_2/scrabble.c) 
 
-Open up Lab_2.
+Open up folder Lab_2.
 
 To *compile*: `clang -o scrabble.c scrabble.c cs50.c`
 
