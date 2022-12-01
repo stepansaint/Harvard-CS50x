@@ -11,6 +11,6 @@ To *run* one of the files: `./(name)` E.g., ***./tideman***
 
 Open up folder Lab_3.
 
-*To try it:* `time ./sort(№ of program) (text_file).txt` E.g., ***time ./sort2 sorted50000.txt***
+To *try* it: `time ./sort(№) (text_file).txt` E.g., ***time ./sort2 sorted50000.txt***
 
 _These are all tasks from Week 3. All of them passed CS50 tests (including tests for code style)._
