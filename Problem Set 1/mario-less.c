@@ -1,10 +1,11 @@
 /**
  * A program that prints out a half-pyramid 
- * of a specified height
+ * of a specified height 
+ * (less difficult)
  * @author Ermakov Stepan
 */
 
-#include <cs50.h>
+#include "cs50.h"
 #include <stdio.h>
 
 int main(void)

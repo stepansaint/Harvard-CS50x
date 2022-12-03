@@ -1,10 +1,11 @@
 /**
  * A program that prints out a double half-pyramid 
  * of a specified height
+ * (more difficult)
  * @author Ermakov Stepan
 */
 
-#include <cs50.h>
+#include "cs50.h"
 #include <stdio.h>
 
 void print_row(int row, int height);
