@@ -1,29 +1,44 @@
-## Usage:
-Download Problem Set 4, open up your terminal, _cd_ into Problem Set 4. 
+# Usage:
+Download Problem Set 4 and open up this folder.
 
-Then _cd_ in one of the folders. E.g., paste this in terminal: _cd Filter\ \\(more\\)/_
+### _From Filter\_less_ [filter.c](Filter_less/filter.c)  
 
-### filter.c _(less difficult)_
-To compile: **_make filter_**
+Open up folder Filter_less.
 
-To run: **_./filter -(flag) images/(name of file).bmp (name of outfile).bmp_** 
+To *compile*: `make filter`
 
-(e.g., *_./filter -g images/yard.bmp out.bmp_*) 
+To *run*: `./filter -(flag) images/(name of infile).bmp (name of outfile).bmp` E.g., ***./filter -g images/yard.bmp out.bmp***
 
-Then open up a new file. E.g., paste this in terminal: *_open out.bmp_* 
+Then open up a new file (e.g., ***out.bmp***) in this folder.
 
-### filter.c _(more difficult)_
-To compile: **_make filter_**
+### _From Filter_ [filter.c](Filter/filter.c)  
 
-To run: **_./filter -(flag) images/(name of file).bmp (name of outfile).bmp_** 
+Open up folder Filter.
 
-(e.g., *_./filter -e images/tower.bmp new.bmp_*) 
+To *compile*: `make filter`
 
-Then open up a new file. E.g., paste this in terminal: *_open new.bmp_* 
+To *run*: `./filter -(flag) images/(name of infile).bmp (name of outfile).bmp` E.g., ***./filter -e images/tower.bmp new.bmp***
 
-### recover.c
-To compile: **_make recover_**
+Then open up a new file (e.g., ***new.bmp***) in this folder.
 
-To run: **_./recover card.raw_**
+### _From Recover_ [recover.c](Recover/recover.c)  
 
-_These are all tasks from Week 4._ _All of them passed CS50 tests._
+Open up folder Recover.
+
+To *compile*: `make recover`
+
+To *run*: `./recover card.raw`
+
+Then you'll see 50 new JPEGs.
+
+### _From Lab\_4_ [volume.c](Lab_4/volume.c)  
+
+Open up folder Lab_4.
+
+To *compile*: `make volume`
+
+To *run*: `./volume input.wav output.wav (factor)` E.g., ***./volume input.wav output.wav 0.1***
+
+Then open up a new audio file _output.wav_.
+
+_These are all tasks from Week 4. All of them passed CS50 tests (including tests for code style)._
