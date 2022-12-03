@@ -50,6 +50,7 @@ unsigned int hash(const char *word)
 {
     short length = (short) strlen(word);
     short primary_factor_of_hash = tolower(word[0]) - 'a';
+    
     // For words with length 1
     if (length == 1)
     {
