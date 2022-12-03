@@ -13,8 +13,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
             average = (int) round((image[i][j].rgbtBlue +
-                            image[i][j].rgbtGreen +
-                            image[i][j].rgbtRed) / 3.);
+                                   image[i][j].rgbtGreen +
+                                   image[i][j].rgbtRed) / 3.);
             image[i][j].rgbtBlue = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtRed = average;
@@ -127,10 +127,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     int sobel_operand;
     int g_x[] = {-1, 0, 1,
                  -2, 0, 2,
-                 -1, 0, 1};
+                 -1, 0, 1
+                };
     int g_y[] = {-1, -2, -1,
                  0, 0, 0,
-                 1, 2, 1};
+                 1, 2, 1
+                };
 
     int average_blue_g_x;
     int average_green_g_x;
@@ -153,10 +155,10 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             average_red_g_y = 0;
 
             for (int row = i - 1, max_row = (row + side_of_color_box);
-                row < max_row; row++)
+                 row < max_row; row++)
             {
                 for (int column = j - 1, max_column = (column + side_of_color_box);
-                        column < max_column; column++)
+                     column < max_column; column++)
                 {
                     if (row < 0 || row >= height ||
                         column < 0 || column >= width)
