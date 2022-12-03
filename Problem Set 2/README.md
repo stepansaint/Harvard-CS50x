@@ -1,7 +1,7 @@
 # Usage:
 Download Problem Set 2 and open up this folder.
 
-### [caesar.c](caesar.c) _or_ [redability.c](readability.c)  _or_ [substitution.c](substitution.c) 
+### [caesar.c](caesar.c) _or_ [readability.c](readability.c)  _or_ [substitution.c](substitution.c) 
 
 To *compile* one of the files: `clang -o (name) (name).c cs50.c` E.g., ***clang -o caesar caesar.c cs50.c***
 
