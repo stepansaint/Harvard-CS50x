@@ -1,5 +1,6 @@
 /**
  * A program that applies filters to BMPs
+ * (more difficult)
  * @author Ermakov Stepan
 */
 
