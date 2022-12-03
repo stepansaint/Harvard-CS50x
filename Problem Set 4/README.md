@@ -39,6 +39,6 @@ To *compile*: `make volume`
 
 To *run*: `./volume input.wav output.wav (factor)` E.g., ***./volume input.wav output.wav 0.1***
 
-Then open up a new audio file _output.wav_.
+Then open up a new audio file ***output.wav***.
 
 _These are all tasks from Week 4. All of them passed CS50 tests (including tests for code style)._
