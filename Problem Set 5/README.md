@@ -1,11 +1,20 @@
-## Usage:
-Download Problem Set 5, open up your terminal, _cd_ into Problem Set 5. 
+# Usage:
+Download Problem Set 5 and open up this folder.
 
-### speller.c
-To compile: **_make speller_**
+### _From Speller_ [speller.c](Speller/speller.c)  
 
-To run: **_./speller dictionaries/large texts/(name of text).txt_** 
+Open up folder Speller.
 
-(e.g., *_./speller dictionaries/large texts/homer.txt_*) 
+To *compile*: `make speller`
 
-_This is a whole task from Week 5. It's passed CS50 tests._
+To *run*: `./speller dictionaries/large texts/(name of text).txt` E.g., ***./speller dictionaries/large texts/homer.txt***
+
+### _From Lab\_5_ [inheritance.c](Lab_5/inheritance.c)  
+
+Open up folder Lab_5.
+
+To *compile*: `make inheritance`
+
+To *run*: `./inheritance`
+
+_These are all tasks from Week 5. All of them passed CS50 tests (including tests for code style)._
