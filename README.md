@@ -1,5 +1,8 @@
 # Computer Science 50x (Oct 2022 - )
 ## Syllabus
+
+[hello, world](https://www.youtube.com/watch?v=ZcCeqbzb4Mk) in the real word (YouTube video)
+
 #### Week 0 - Scratch
 Some topics: problem solving, ASCII, Unicode, pseudocode.
 
