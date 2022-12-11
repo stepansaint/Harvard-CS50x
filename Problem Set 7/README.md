@@ -5,7 +5,7 @@ Download Problem Set 7 and open up this folder.
 
 Open up folder Fiftyville.
 
-To *look* at the process: [`log.sql`](Fiftyville/log.sql)
+To *look* at the process: [log.sql](Fiftyville/log.sql)
 
 ### _From Movies_ [Task.txt](Movies/Task.txt)  
 
