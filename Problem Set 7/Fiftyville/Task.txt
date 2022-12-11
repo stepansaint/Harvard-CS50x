@@ -1,0 +1,9 @@
+The CS50 Duck has been stolen! The town of Fiftyville has
+called upon you to solve the mystery of the stolen duck.
+Authorities believe that the thief stole the duck and then,
+shortly afterwards, took a flight out of town with the help
+of an accomplice. The goal is to identify:
+
+1. Who is the thief?
+2. What city did the thief escape to?
+3. Who's the thief’s accomplice?
