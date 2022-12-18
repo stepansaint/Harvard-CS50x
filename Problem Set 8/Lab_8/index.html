@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Logic for `Part 1: Multiple Choice`
+                let feedback_choice = document.querySelector('#feedback_choice');
+
+                let right_choice = document.querySelector('#choice');
+                right_choice.addEventListener('click', function() {
+                    right_choice.style.backgroundColor = 'green';
+                    feedback_choice.innerHTML = "Correct!";
+                });
+
+                let wrong_choices = document.querySelectorAll('.incorrect');
+                for (let choice = 0; choice < wrong_choices.length; choice++)
+                {
+                    wrong_choices[choice].addEventListener('click', function() {
+                        wrong_choices[choice].style.backgroundColor = 'red';
+                        feedback_choice.innerHTML = "Incorrect";
+                    });
+                }
+
+                let feedbacks = ["Right!", "Indeed!", "Exactly!"];
+                let feedback_additional = document.querySelector('#feedback_additional');
+                let additional_choices = document.querySelectorAll('.additional');
+                for (let choice = 0; choice < additional_choices.length; choice++)
+                {
+                    additional_choices[choice].addEventListener('click', function() {
+                        additional_choices[choice].style.backgroundColor = 'green';
+                        feedback_additional.innerHTML = feedbacks[choice];
+                    });
+                }
+
+                // Logic for `Part 2: Free Response`
+                let feedback_response = document.querySelector('#feedback_response');
+                let response_button = document.querySelector('#response_button');
+                let response_text = document.querySelector('#response_text');
+                response_button.addEventListener('click', function() {
+                    if (response_text.value.toLowerCase() === "fortran")
+                    {
+                        response_text.style.backgroundColor = 'green';
+                        feedback_response.innerHTML = "Correct!";
+                    }
+                    else
+                    {
+                        response_text.style.backgroundColor = 'red';
+                        feedback_response.innerHTML = "Incorrect";
+                    }
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>Who's the founder of Java?</h3>
+                <button class="incorrect">Dennis Rithcie</button>
+                <button class="incorrect">Elon Musk</button>
+                <button id="choice">James Gosling</button>
+                <button class="incorrect">Guido van Rossum</button>
+                <p id="feedback_choice"></p>
+
+                <h3>Try to guess who my favorite author is?</h3>
+                <button class="additional">John Steinbeck</button>
+                <button class="additional">Charles Bukowski</button>
+                <button class="additional">Jack London</button>
+                <p id="feedback_additional"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>What's the oldest programming language in use today?</h3>
+                <input id="response_text" type="text">
+                <button id="response_button">Check answer</button>
+                <p id="feedback_response"></p>
+            </div>
+        </div>
+    </body>
+</html>
